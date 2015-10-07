@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://StevenNunez:7b8c11e7e66ad18161d7270250901b932530d4e3@api.github.com/users/aviflombaum
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Tue, 06 Oct 2015 19:27:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4989'
+      X-Ratelimit-Reset:
+      - '1444162551'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Last-Modified:
+      - Thu, 01 Oct 2015 00:46:11 GMT
+      Etag:
+      - W/"d6aed742fc35391f2656d3f2cab03580"
+      X-Oauth-Scopes:
+      - read:org, read:repo_hook, repo, user
+      X-Accepted-Oauth-Scopes:
+      - user
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      X-Github-Media-Type:
+      - github.v3
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - deny
+      Content-Security-Policy:
+      - default-src 'none'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Github-Request-Id:
+      - 6C29131C:13365:2A8FA27:56142084
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Served-By:
+      - 4c8b2d4732c413f4b9aefe394bd65569
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA52TQY+bMBSE/8rKZxLjhGxbpKqtKu2xl24P3UtkwIEnGRsZ
+        A0rR/veOgbTZXFbkFOK8+TwZ3oxM25IMS5ns6aRtncmuZhGjgqXJQRwinEsv
+        3bFzGkOV902bcj4fttuSfNVlXatcbo1Xxm9zW/OOB+mX/vMepNIthIBkOLgh
+        NbRQZilQLfDXXipf65v753snxdvZk9XaDmDcGn7nGv5PCIfzM5nyPgiEI7e+
+        UkgNf+c1hECtX21pEo08fBypCJgWb8KpYq2tRQZTg4GfkTvV2InXZW3uqPFk
+        zWp7b8SAWVdKQ3/kXTCIWzCCsdVGJhHEqscCrlbPqpE3jnqZn0MsTuWKeuR8
+        H/FGDqA/NwrL/wvbEFInr46yqEPtTlK3KmJG1mHgW08PT/9LiPVupDnjhyeN
+        WJ01Dz/zyloNSIbeLoVEH4dh2F4VIRQDM9rm09vA3I/f30NCtaRQY4x+vZR9
+        ma3IKZlpuDCd1uCTvTw2XaYpP84xp2L3IWLL0bShLH0Ul86geCwVn5KrDuH7
+        PmI56B6JSo/rd3H8cRMnm3j/LA4YT5PdC9x1TXE9Iw4bEW9i8RzHafKYCvHC
+        Xv8Cyjs6nq8EAAA=
+    http_version: 
+  recorded_at: Tue, 06 Oct 2015 19:27:00 GMT
+recorded_with: VCR 2.9.3

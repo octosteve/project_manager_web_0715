@@ -1,5 +1,39 @@
 require 'rails_helper'
 
 RSpec.describe Collaborator, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  context "Validations" do
+    it "must have a name" do
+      collaborator = Collaborator.new
+      collaborator.valid?
+      expect(collaborator.errors[:name]).to eq( ["can't be blank"])
+    end
+
+    it "must have a github_username" do
+      collaborator = Collaborator.new
+      collaborator.valid?
+      expect(collaborator.errors[:github_username]).to eq( ["can't be blank"])
+    end
+
+    it "github_username must be unique" do
+      steven = Collaborator.create(name: "Steven Nunez", github_username: "StevenNunez")
+      steven_again = Collaborator.new(github_username: "StevenNunez")
+      steven_again.valid?
+      expect(steven_again.errors[:github_username]).to eq(["has already been taken"])
+    end
+  end
+
+  context " getting users from github" do
+    it "finds an existing user from the database" do
+      steven = Collaborator.create(name: "Steven Nunez", github_username: "StevenNunez")
+      steven_from_db = Collaborator.from_github_username('StevenNunez')
+      expect(steven).to eq(steven_from_db)
+    end
+
+    it "fetches user's information from github if not found" do
+      VCR.use_cassette("get_avi_from_github") do
+        avi = Collaborator.from_github_username('aviflombaum')
+        expect(avi.name).to eq('Avi Flombaum')
+      end
+    end
+  end
 end
