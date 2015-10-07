@@ -30,10 +30,14 @@ RSpec.describe Collaborator, type: :model do
     end
 
     it "fetches user's information from github if not found" do
-      VCR.use_cassette("get_avi_from_github") do
-        avi = Collaborator.from_github_username('aviflombaum')
-        expect(avi.name).to eq('Avi Flombaum')
-      end
+      avi = double("Avi", name: "Avi Flombaum", login: "aviflombaum")
+      expect(GithubUser).
+          to receive(:from_username).
+          with("aviflombaum").
+          and_return(avi)
+
+      avi = Collaborator.from_github_username('aviflombaum')
+      expect(avi.name).to eq('Avi Flombaum')
     end
   end
 end

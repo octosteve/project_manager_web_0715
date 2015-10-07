@@ -6,11 +6,9 @@ class Collaborator < ActiveRecord::Base
 
   def self.from_github_username(github_username)
     user = find_by(github_username: github_username)
-    if user
-      user
-    else
-      gh_user = JSON.parse(RestClient.get("https://api.github.com/users/#{github_username}"))
-      create!(name: gh_user["name"], github_username: github_username)
-    end
+    return user if user
+
+    gh_user = GithubUser.from_username(github_username)
+    create!(name: gh_user.name, github_username: gh_user.login)
   end
 end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://StevenNunez:7b8c11e7e66ad18161d7270250901b932530d4e3@api.github.com/users/aviflombaum
+    uri: https://StevenNunez:<GITHUB KEY>@api.github.com/users/aviflombaum
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Tue, 06 Oct 2015 19:27:00 GMT
+      - Wed, 07 Oct 2015 19:39:56 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -31,17 +31,17 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4989'
+      - '4998'
       X-Ratelimit-Reset:
-      - '1444162551'
+      - '1444250258'
       Cache-Control:
       - private, max-age=60, s-maxage=60
       Last-Modified:
-      - Thu, 01 Oct 2015 00:46:11 GMT
+      - Wed, 07 Oct 2015 16:43:56 GMT
       Etag:
-      - W/"d6aed742fc35391f2656d3f2cab03580"
+      - W/"689032a3c94b2277d74883057e925231"
       X-Oauth-Scopes:
-      - read:org, read:repo_hook, repo, user
+      - gist, repo, user
       X-Accepted-Oauth-Scopes:
       - user
       Vary:
@@ -63,7 +63,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       X-Github-Request-Id:
-      - 6C29131C:13365:2A8FA27:56142084
+      - 6C29131C:17690:FE3B9FE:5615750C
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; preload
       X-Content-Type-Options:
@@ -75,17 +75,17 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAA52TQY+bMBSE/8rKZxLjhGxbpKqtKu2xl24P3UtkwIEnGRsZ
-        A0rR/veOgbTZXFbkFOK8+TwZ3oxM25IMS5ns6aRtncmuZhGjgqXJQRwinEsv
-        3bFzGkOV902bcj4fttuSfNVlXatcbo1Xxm9zW/OOB+mX/vMepNIthIBkOLgh
-        NbRQZilQLfDXXipf65v753snxdvZk9XaDmDcGn7nGv5PCIfzM5nyPgiEI7e+
-        UkgNf+c1hECtX21pEo08fBypCJgWb8KpYq2tRQZTg4GfkTvV2InXZW3uqPFk
-        zWp7b8SAWVdKQ3/kXTCIWzCCsdVGJhHEqscCrlbPqpE3jnqZn0MsTuWKeuR8
-        H/FGDqA/NwrL/wvbEFInr46yqEPtTlK3KmJG1mHgW08PT/9LiPVupDnjhyeN
-        WJ01Dz/zyloNSIbeLoVEH4dh2F4VIRQDM9rm09vA3I/f30NCtaRQY4x+vZR9
-        ma3IKZlpuDCd1uCTvTw2XaYpP84xp2L3IWLL0bShLH0Ul86geCwVn5KrDuH7
-        PmI56B6JSo/rd3H8cRMnm3j/LA4YT5PdC9x1TXE9Iw4bEW9i8RzHafKYCvHC
-        Xv8Cyjs6nq8EAAA=
+        H4sIAAAAAAAAA52TQY+bMBSE/8rKZxIggXRrqequKu2xl24P3UtkwIEnGRsZ
+        A0rR/veOgbTZXCpyCnHefJ4Mb0amTEmacSZ6OilTZ6KrWcCoYDxJ4zTAuXDC
+        HjurMFQ517Q8DOfDdluSq7qsa6XNjXZSu21u6rALvfRr/2UPUmkXgkcyHNyQ
+        GloosxSoFvhrL5Wr1c39872T4uPsyShlBjBuDf/nmvCvEA7nZ9LlfRAIx9C4
+        SiI1/J13HwK1brWlSTSG/uNIhce0eBNWFmttLTKYGjT8jKGVjZl4XdbmlhpH
+        Rq+290EMmLGl0PRb3AWDuAXDG1ttZBJBLHss4Gr1rBrDxlIv8rOPxcpcUo+c
+        7yPeyAF050Zi+X9iG3zq5ORRFLWv3UmoVgZMi9oPPPf08PKvhFjvRugzfnhR
+        iNUa/fAjr4xRgGTo7VJI9HEYhu1VEXwxMKNMPr0NzH3/9c0nVAvyNcbo06Xs
+        y2xFVopMwYXulAKfzOWx6TJF+XGOmce7x4AtR9OGMn6IL51B8RiPPydXHcL3
+        fcBy0B0SFQ7X76LocRMlm2j/GqcY58nuDe66prieidNNHG2iT6/xgSd7nh7e
+        2PsfmrcNwq8EAAA=
     http_version: 
-  recorded_at: Tue, 06 Oct 2015 19:27:00 GMT
+  recorded_at: Wed, 07 Oct 2015 19:39:56 GMT
 recorded_with: VCR 2.9.3
